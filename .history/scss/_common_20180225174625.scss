@@ -1,0 +1,91 @@
+body {
+    font-size: 12px;
+    font-family: $font-family-base;
+}
+
+a {
+    color: $link-color;
+}
+
+a:hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration
+}
+
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hidden{
+    display: none;
+}
+
+pre{
+    display: block;
+    padding: 9.5px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: auto;
+    margin: 0;
+}
+dl,dd,dt{
+    margin: 0;
+    padding: 0;
+}
+
+.table {
+    border-color: #F0F0F0;
+    border-spacing: 2px 2px;
+    box-sizing: border-box;
+    display: table;
+    zoom: 1;
+}
+
+.table .tbody {
+    box-sizing: border-box;
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+.table .td {
+    display: table-cell;
+    padding: 1px;
+    vertical-align: middle;
+    zoom: 1;
+}
+
+.table .tfoot {
+    box-sizing: border-box;
+    display: table-footer-group;
+    vertical-align: middle;
+}
+
+.table .th {
+    display: table-cell;
+    font-weight: bold;
+    padding: 1px;
+    text-align: center;
+    vertical-align: middle;
+    zoom: 1;
+}
+
+.table .thead {
+    box-sizing: border-box;
+    display: table-header-group;
+    vertical-align: middle;
+}
+
+.table .tr {
+    box-sizing: border-box;
+    display: table-row;
+    vertical-align: middle;
+    zoom: 1;
+}

@@ -1,0 +1,103 @@
+.readme {
+    font-size: 14px;
+}
+
+.readme p,
+.readme ul,
+.readme ol {
+    padding: 3px 0 3px 5px;
+}
+
+.readme li {
+    list-style: initial;
+}
+
+.readme img {
+    max-width: 100%;
+}
+
+.readme h1 {
+    font-size: 24px;
+    font-weight: normal;
+    padding: 10px 0 5px 0;
+    border-bottom: 1px solid #428bca;
+}
+
+.readme pre {
+    margin: 15px 3px;
+}
+
+.readme li p {
+    padding: 10px 0;
+    color: #333;
+}
+
+.readme p a {
+    color: #c7254e;
+}
+
+.readme h2 {
+    padding-bottom: 3px;
+    border-bottom: 1px solid #dedede;
+    font-size: 22px;
+}
+
+.readme h3 {
+    font-size: 20px;
+    padding-bottom: 3px;
+}
+
+.readme h4 {
+    font-size: 18px;
+}
+
+.readme h5 {
+    font-size: 16px;
+}
+
+.readme h6 {
+    font-size: 15px;
+}
+
+.readme table {
+    margin: 5px 30px 20px;
+}
+
+.readme table th,
+.readme table td {
+    padding: 2px 20px 2px 5px;
+    border-bottom: 1px solid #dedede;
+}
+
+.readme section header h2 {
+    font-size: 20px;
+    padding-left: 10px;
+    border-left: 5px solid #fa3282;
+}
+
+.readme section .container-overview {
+    color: #333;
+    border-radius: 2px;
+    border: 1px solid #dedede;
+    padding: 15px 15px 10px;
+}
+
+.readme section .container-overview .description {
+    color: #666;
+}
+
+.readme section .container-overview dt {
+    float: left;
+}
+
+.readme section .container-overview dd {
+    float: left;
+    margin-left: 10px;
+}
+
+.readme blockquote {
+    padding: inherit;
+    margin: inherit;
+    font-size: inherit;
+    color: #777;
+}

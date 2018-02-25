@@ -1,0 +1,107 @@
+.lnb {
+    width: 290px;
+    position: absolute;
+    bottom: 30px;
+    top: 0;
+    overflow: auto;
+    left: 0;
+    background-color: #161b1d;
+    padding: 0 20px;
+}
+
+.lnb .logo {
+    height: 13px;
+    margin: 20px auto 0;
+}
+
+.lnb .title {
+    text-align: center;
+    padding: 0 0 15px;
+}
+
+.lnb .title .link {
+    color: #fff;
+    font-style: italic;
+}
+
+.lnb h3 {
+    font-size: 1.5em;
+    color: #fa3282;
+}
+
+.lnb h3 a {
+    color: #fa3282;
+}
+
+.lnb h3 a:hover {
+    color: #9a3282;
+}
+
+.lnb .lnb-api li,
+.lnb .lnb-examples li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #1f292e;
+}
+
+.lnb .lnb-api h3 a {
+    color: #fa3282;
+}
+
+.lnb .lnb-api h3 a:hover {
+    color: #fa3282;
+    text-decoration: underline;
+}
+
+.lnb .lnb-api a,
+.lnb .lnb-examples a {
+    color: #7cafc2;
+}
+
+.lnb .lnb-api a:hover,
+.lnb .lnb-examples a:hover {
+    color: #a3cfdf;
+}
+
+.lnb .lnb-api .toggle-subnav {
+    padding: 0 3px;
+    margin-bottom: 0;
+}
+
+.lnb .lnb-api .toggle-subnav:focus {
+    outline: 0;
+}
+
+.lnb .lnb-api .toggle-subnav {
+    font-size: 10px;
+}
+
+.lnb .member-type {
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #568c3b;
+    font-weight: normal;
+    font-size: 10px;
+    cursor: text;
+}
+
+.lnb .inner li {
+    margin-left: 15px;
+    border-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #bbb;
+}
+
+.lnb .inner a {
+    color: #bbb;
+}
+
+.lnb .inner a:hover {
+    color: #eee;
+}
+
+.lnb .version {
+    color: #aaa;
+    font-size: 1.2em;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "myjsdoc",
+  "version": "0.0.1",
+  "description": "JSDoc Template",
+  "main": "publish.js",
+  "scripts": {
+    "serve": "gulp serve"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^0.22.0"
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-jsdoc3": "^1.0.1",
+    "gulp-sass": "^3.1.0",
+    "jsdoc": "^3.5.3"
+  }
+}

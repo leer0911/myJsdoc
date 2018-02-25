@@ -1,0 +1,11 @@
+.search-container{
+    margin-top: 30px;
+    display: flex;
+    input{
+        width: 100%;
+        outline: none;
+        border: none;
+        padding-bottom:30px;
+        border-bottom: 2px solid $dark;
+    }
+}

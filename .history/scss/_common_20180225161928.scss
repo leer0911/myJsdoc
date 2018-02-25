@@ -1,0 +1,23 @@
+body {
+    font-size: 12px;
+    font-family: $font-family-base;
+}
+
+a {
+    color: $link-color;
+}
+
+a:hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration
+}
+
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hidden{
+    display: none;
+}

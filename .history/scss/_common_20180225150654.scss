@@ -1,0 +1,14 @@
+body {
+    font-size: 12px;
+    font-family: $font-family-base;
+}
+
+a {
+    color: $link-color;
+    text-decoration: $link-decoration
+}
+
+a:hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration
+}

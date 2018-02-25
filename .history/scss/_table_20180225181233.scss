@@ -1,0 +1,13 @@
+table.params {
+    box-sizing: border-box;
+    border-collapse:collapse;
+    th{
+        background: #eee;
+        color: #fff;
+    }
+    th,td {
+        border: 1px solid #d8d8d8;
+        padding:10px 30px;
+    }
+}
+

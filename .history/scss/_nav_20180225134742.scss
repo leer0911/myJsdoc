@@ -1,0 +1,113 @@
+$color_1: #fff;
+$color_2: #fa3282;
+$color_3: #9a3282;
+$color_4: #7cafc2;
+$color_5: #a3cfdf;
+$color_6: #568c3b;
+$color_7: #bbb;
+$color_8: #eee;
+$color_9: #aaa;
+$background_color_1: #161b1d;
+.mynav {
+    width: 290px;
+    position: absolute;
+    bottom: 30px;
+    top: 0;
+    overflow: auto;
+    left: 0;
+    background-color: $background_color_1;
+    padding: 0 20px;
+    .logo {
+        height: 13px;
+        margin: 20px auto 0;
+    }
+    .title {
+        text-align: center;
+        padding: 0 0 15px;
+        .link {
+            color: $color_1;
+            font-style: italic;
+        }
+    }
+    h3 {
+        font-size: 1.5em;
+        color: $color_2;
+        a {
+            color: $color_2;
+            &:hover {
+                color: $color_3;
+            }
+        }
+    }
+    .lnb-api {
+        li {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #1f292e;
+        }
+        h3 {
+            a {
+                color: $color_2;
+                &:hover {
+                    color: $color_2;
+                    text-decoration: underline;
+                }
+            }
+        }
+        a {
+            color: $color_4;
+            &:hover {
+                color: $color_5;
+            }
+        }
+        .toggle-subnav {
+            padding: 0 3px;
+            margin-bottom: 0;
+            font-size: 10px;
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+    .lnb-examples {
+        li {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #1f292e;
+        }
+        a {
+            color: $color_4;
+            &:hover {
+                color: $color_5;
+            }
+        }
+    }
+    .member-type {
+        margin-top: 5px;
+        margin-left: 5px;
+        color: $color_6;
+        font-weight: normal;
+        font-size: 10px;
+        cursor: text;
+    }
+    .inner {
+        li {
+            margin-left: 15px;
+            border-bottom: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            color: $color_7;
+        }
+        a {
+            color: $color_7;
+            &:hover {
+                color: $color_8;
+            }
+        }
+    }
+    .version {
+        color: $color_9;
+        font-size: 1.2em;
+    }
+}
+

@@ -1,0 +1,67 @@
+.logo {
+    width: 90px;
+    vertical-align: initial;
+}
+
+.hidden {
+    display: none;
+}
+
+#example-nav {
+    margin-top: 15px;
+}
+
+#resizer {
+    width: 7px;
+    position: fixed;
+    left: 290px;
+    height: 100%;
+    background-color: #e5e5e5;
+    background-image: url(/images/thumb_vertical.png);
+    cursor: col-resize;
+}
+
+span.param-type {
+    color: #aaa;
+}
+
+pre.prettyprint {
+    font-size: 0.9em;
+    border-radius: 0;
+}
+
+span.icon {
+    font-size: 8pt;
+    border-radius: 3px;
+    padding: 1px 2px;
+}
+
+span.icon.green {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+span.icon.blue {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+span.icon.yellow {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+span.icon.red {
+    color: #A94443;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+span.arrow {
+    font-size: 8pt;
+    padding-right: 5px;
+}
+

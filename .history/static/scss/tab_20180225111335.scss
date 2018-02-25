@@ -1,0 +1,27 @@
+.lnb-tab {
+    text-align: center;
+    text-decoration: none;
+}
+
+.lnb-tab li {
+    display: inline-block;
+    padding-top: 15px;
+}
+
+.lnb-tab li a {
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+.lnb-tab li.selected a {
+    color: #fff;
+    font-size: 1em;
+}
+
+.lnb-tab li+li a h4:before {
+    content: "\007C";
+    display: inline-block;
+    color: #999;
+    padding: 0 10px;
+}
+

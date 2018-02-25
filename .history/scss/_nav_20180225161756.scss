@@ -1,0 +1,40 @@
+.mynav {
+    width: 290px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    .title{
+        text-align: center;
+    }
+    .lnb-api>ul>li,
+    .lnb-examples>ul>li{
+       padding: 10px;
+       .toggle-subnav{
+           margin-right: 8px;
+       }
+    }
+    .member-type{
+        padding: 10px;
+    }
+    .inner{
+        li{
+            padding: 10px 20px;
+        }
+    }
+}
+
+#resizer {
+    width: 7px;
+    position: fixed;
+    left: 290px;
+    height: 100%;
+    background-color: #e5e5e5;
+    background-image: url(/img/thumb_vertical.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: col-resize;
+}

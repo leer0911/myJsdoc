@@ -1,0 +1,27 @@
+.mynav-tab {
+    text-align: center;
+    text-decoration: none;
+    li {
+        display: inline-block;
+        padding-top: 15px;
+    }
+    li.selected {
+        a {
+            color: $primary;
+            font-size: 1em;
+        }
+    }
+    li+li {
+        a {
+            h4 {
+                &:before {
+                    content: "\007C";
+                    display: inline-block;
+                    color: #333;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
+

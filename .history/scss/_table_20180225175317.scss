@@ -1,0 +1,45 @@
+$border_color_1: #F0F0F0;
+table.params {
+    border-color: $border_color_1;
+    border-spacing: 2px 2px;
+    box-sizing: border-box;
+    display: table;
+    zoom: 1;
+    tbody {
+        box-sizing: border-box;
+        display: table-row-group;
+        vertical-align: middle;
+    }
+    td {
+        display: table-cell;
+        padding: 1px;
+        vertical-align: middle;
+        zoom: 1;
+    }
+    tfoot {
+        box-sizing: border-box;
+        display: table-footer-group;
+        vertical-align: middle;
+    }
+    th {
+        border-bottom: 1px solid #d8d8d8;
+        display: table-cell;
+        font-weight: bold;
+        padding: 1px;
+        text-align: center;
+        vertical-align: middle;
+        zoom: 1;
+    }
+    thead {
+        box-sizing: border-box;
+        display: table-header-group;
+        vertical-align: middle;
+    }
+    tr {
+        box-sizing: border-box;
+        display: table-row;
+        vertical-align: middle;
+        zoom: 1;
+    }
+}
+

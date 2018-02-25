@@ -1,0 +1,57 @@
+$color_1: #aaa;
+$color_2: #3c763d;
+$color_3: #31708f;
+$color_4: #8a6d3b;
+$color_5: #A94443;
+$background_color_1: #dff0d8;
+$background_color_2: #d9edf7;
+$background_color_3: #fcf8e3;
+$background_color_4: #f2dede;
+$border_color_1: #d6e9c6;
+$border_color_2: #bce8f1;
+$border_color_3: #faebcc;
+$border_color_4: #ebccd1;
+span.param-type {
+    color: $color_1;
+}
+
+pre.prettyprint {
+    font-size: 0.9em;
+    border-radius: 0;
+}
+
+span.icon {
+    font-size: 8pt;
+    border-radius: 3px;
+    padding: 1px 2px;
+}
+
+span.icon.green {
+    color: $color_2;
+    background-color: $background_color_1;
+    border-color: $border_color_1;
+}
+
+span.icon.blue {
+    color: $color_3;
+    background-color: $background_color_2;
+    border-color: $border_color_2;
+}
+
+span.icon.yellow {
+    color: $color_4;
+    background-color: $background_color_3;
+    border-color: $border_color_3;
+}
+
+span.icon.red {
+    color: $color_5;
+    background-color: $background_color_4;
+    border-color: $border_color_4;
+}
+
+span.arrow {
+    font-size: 8pt;
+    padding-right: 5px;
+}
+

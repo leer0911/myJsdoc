@@ -1,0 +1,33 @@
+.search-container {
+    margin-top: 30px;
+    position: relative;
+    input {
+        outline: none;
+        border: none;
+        border-bottom: 2px solid #c5c5c5;
+        padding: 0 0 10px;
+        text-indent: 30px;
+        width: 100%;
+    }
+    .fa-search {
+        color: #979797;
+        left: 7px;
+        position: absolute;
+        top: 2px;
+    }
+    ul li {
+        padding: 10px;
+        background: $white;
+        color: $white;
+        cursor: pointer;
+        a{
+            color:$white;
+        }
+        strong{
+            color:$primary
+        }
+        &:hover{
+            background:$gray-600
+        }
+    }
+}
