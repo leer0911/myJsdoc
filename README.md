@@ -14,11 +14,11 @@ API 文档风格主要基于 `jsDoc Template` ，`myJsDoc` 就是其中衍生的
 
 * 整体风格
 
-![预览](./screenshot/a.png)
+![预览](https://github.com/leer0911/myJsdoc/raw/master/screenshot/a.png)
 
 * markdown 风格 (github)
 
-![预览](./screenshot/b.png)
+![预览](https://github.com/leer0911/myJsdoc/blob/master/screenshot/b.png)
 
 ## JsDoc 安装
 
