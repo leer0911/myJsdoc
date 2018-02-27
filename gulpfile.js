@@ -8,42 +8,49 @@ var del = require('del');
 var connect = require('gulp-connect');
 var scss = require('gulp-sass');
 var jsdoc = require('gulp-jsdoc3');
+var sourcemaps = require('gulp-sourcemaps');
 
 /* Demo paths */
 var DEMO_PATH = path.join(__dirname, 'demo');
 var DEMO_TEMPLATE_PATH = __dirname;
 var DEMO_DESTINATION_PATH = 'doc';
 
-var demoFilePaths = ['src/**/*.js'].map(function (filePath) {
+var demoFilePaths = ['src/**/*.js'].map(function(filePath) {
     return path.join(DEMO_PATH, filePath);
 });
 demoFilePaths.push('README.md');
 
-gulp.task('demo:default', ['del'], function (done) {
+gulp.task('demo:default', ['del'], function(done) {
     var config = {
         opts: {
             destination: path.join(DEMO_DESTINATION_PATH, '-docstrap')
         }
     };
 
-    gulp.src(demoFilePaths, {
+    gulp
+        .src(demoFilePaths, {
             read: false
         })
         .pipe(jsdoc(config, done));
 });
 
-gulp.task("scss", function () {
-    gulp.src(
-        "./scss/**/*.scss"
-    ).pipe(scss({
-        outputStyle: 'compressed'
-    }).on('error', scss.logError)).pipe(gulp.dest("./static/styles"));
+gulp.task('scss', function() {
+    gulp
+        .src('./scss/**/*.scss')
+        .pipe(sourcemaps.init())
+        .pipe(
+            scss({
+                outputStyle: 'compressed'
+            }).on('error', scss.logError)
+        )
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('./static/styles'));
 });
 
 /**
  * Generate demo document
  */
-gulp.task('demo', ['del'], function (done) {
+gulp.task('demo', ['del'], function(done) {
     /* Demo config */
     var domeConfigPath = path.join(DEMO_PATH, 'jsdoc-conf.json');
     var config = require(domeConfigPath);
@@ -52,7 +59,8 @@ gulp.task('demo', ['del'], function (done) {
     config.opts.template = DEMO_TEMPLATE_PATH;
     config.opts.destination = DEMO_DESTINATION_PATH;
 
-    gulp.src(demoFilePaths, {
+    gulp
+        .src(demoFilePaths, {
             read: false
         })
         .pipe(jsdoc(config, done));
@@ -75,26 +83,27 @@ var watchPaths = [
 /**
  * Reload server
  */
-gulp.task('reload', ['demo'], function () {
-    return gulp.src(watchPaths)
-        .pipe(connect.reload())
+gulp.task('reload', ['demo'], function() {
+    return gulp.src(watchPaths).pipe(connect.reload());
 });
 
 /**
  * Regenerate demo document when a file changes
  */
-gulp.task('watch', ['demo'], function () {
-    gulp.watch('scss/**/*.scss', ['scss'])
+gulp.task('watch', ['demo'], function() {
+    gulp.watch('scss/**/*.scss', ['scss']);
     var watcher = gulp.watch(watchPaths, ['demo', 'reload']);
-    watcher.on('change', function (event) {
-        console.log('File: ' + event.path + ' was ' + event.type + ', running tasks...');
+    watcher.on('change', function(event) {
+        console.log(
+            'File: ' + event.path + ' was ' + event.type + ', running tasks...'
+        );
     });
 });
 
 /**
  * Run web server
  */
-gulp.task('connect', ['demo'], function () {
+gulp.task('connect', ['demo'], function() {
     connect.server({
         root: DEMO_DESTINATION_PATH,
         livereload: true
@@ -107,11 +116,10 @@ gulp.task('connect', ['demo'], function () {
  */
 gulp.task('serve', ['connect', 'watch']);
 
-
 /**
  * @command gulp del
  * Delete all demo-doc files
  */
-gulp.task('del', function () {
+gulp.task('del', function() {
     return del([DEMO_DESTINATION_PATH]);
 });

@@ -1,3 +1,4 @@
 doc/
-.histroy
-
+.history
+node_modules/
+.vscode/

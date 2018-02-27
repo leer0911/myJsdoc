@@ -16,6 +16,7 @@
     "gulp-connect": "^5.0.0",
     "gulp-jsdoc3": "^1.0.1",
     "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
     "jsdoc": "^3.5.3"
   }
 }
